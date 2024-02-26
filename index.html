@@ -4,19 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta property="og:image" content="./A4.png">
+    <meta property="og:title" content="Weeding Invitation | Akrit Weds Sunanda">
+    <meta property="og:description" content="I hope this message finds you well. As I embark on a new chapter of my life, I am thrilled to invite you to be a part of the celebration at my wedding reception.The reception is scheduled for 6th March, 2024 at 7 pm. Join me and share in the happiness, laughter, and love as we celebrate this special day. Your presence will undoubtedly add to the warmth of the occasion.">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <style>
+        *{font-family: "Comfortaa", sans-serif; box-sizing: border-box;}
+        body, html{margin: 0; padding: 0; width: 100%; height: 100%;}
+        body{padding: 20px; background-image: linear-gradient(45deg, #ffbaba, #f7cfff);}
+    </style>
 </head>
 <body>
-    <h1>Weeding</h1>
+    <div style="
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        flex-flow: column;
+        height: 100%;
+        width: 100%;
+        padding-bottom: 60px;
+        background-image: linear-gradient(180deg, #840501, #c20f09);
+        color: white;
+        box-shadow: 1px 1px 20px #00000082;
+        border-radius: 10px;
+        position: relative;
+        ">
+        <h1 style="
+        background-image: linear-gradient(180deg, #840501, #c20f09);
+        width: 100%;
+        color: white;
+        position: absolute;
+        top: 0;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        margin-top: 0px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 1px 1px 20px #8c060694;
+        ">Wedding Invitation</h1>
+    <!-- font-family: 'Dancing Script', cursive; -->
+        <i style=" 
+        text-align: left; width: 100%; margin: 0px; margin-top: 130px; margin-bottom: 10px; padding: 0 20px; ">
+            Dear <b id="userName">Friend</b>
+</i>
+        <i style=" 
+        text-align: left; text-transform: math-auto; width: 100%; margin: 0px; margin-bottom: 10px; padding: 0 20px; line-height: 18px;">
+            I hope this message finds you well. As I embark on a new chapter of my life, I am thrilled to invite you to be a part of the celebration at my wedding reception.The reception is scheduled for 6th March, 2024 at 7 pm. Join me and share in the happiness, laughter, and love as we celebrate this special day. Your presence will undoubtedly add to the warmth of the occasion.
+</i>
+        <div style="    width: 100%;
+        text-align: center;
+        color: white;
+        margin: 10px 0 20px;
+        background-image: linear-gradient(180deg, #ed403a, #ff0800);
+        box-shadow: 1px 1px 20px #8c060694;">
+            <h1 style="    margin: 0;
+            margin-top: 10px;">Akrit</h1>
+            <p>Weds</p>
+            <h1 style="    margin: 0;
+            margin-bottom: 10px;">Sunanda</h1>
+        </div>
+        <a style="
+        color: white;
+        background-image: linear-gradient(45deg, #c80ab3, red);
+        border-radius: 7px;
+        padding: 10px 20px;
+        box-shadow: 1px 1px 20px #3e0808;
+        text-decoration: none;
+        " href="https://maps.app.goo.gl/czdg8GvTnNcPov8C7" target="_blank">Tap To Get Location</a>
+        <h2 style="    background: black;
+        color: white;
+        padding: 10px 20px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        background-image: linear-gradient(180deg, #6d0c00, #ab1414);
+        text-align: center;">Date - 6th March, 2024</h2>
+    </div>
+    <script>
+        window.addEventListener("DOMContentLoaded", (event) => {
+            const cookieValue = document.cookie
+            .split("; ")
+            .find((row) => row.startsWith("person="))
+            ?.split("=")[1];
+            let person;
+            if(!cookieValue || cookieValue == ''){
+                person = prompt("Please enter your name", "");
+            }else{
+                person = cookieValue;
+            }
+            if (person != null) {
+                document.cookie = "person=" + person;
+                document.getElementById("userName").innerHTML = person;
+            }
+        });
 
-    <iframe
-    width="600"
-    height="450"
-    style="border:0"
-    loading="lazy"
-    allowfullscreen
-    referrerpolicy="no-referrer-when-downgrade"
-    src="https://www.google.com/maps/embed/v1/place?key=
-        &q=Space+Needle,Seattle+WA">
-    </iframe>
+    </script>
 </body>
 </html>
